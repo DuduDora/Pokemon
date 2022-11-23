@@ -14,6 +14,7 @@ function App() {
       <Route exact path={'/pokemons/:id'} component={Details} />
 
 
+
     </div>
   );
 }

@@ -39,6 +39,14 @@ export default function Details() {
                         <h3>{details.name}</h3>
                     </div>
                     <div>
+                        {details.types.map(e => {
+                            return (
+                                <div
+                                    key={e}>
+                                    <span>{e.toUpperCase()}</span>
+                                </div>
+                            )
+                        })}
                         {/* {details.types ? details?.types.map(type => <h2 key={type.name} id={type.name}>{type.name.toUpperCase()}</h2>) : null} */}
                         {/* <h3>{details[0].types.map(type => `${type.toUpperCase()}`)}</h3> */}
                     </div>
